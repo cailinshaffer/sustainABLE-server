@@ -22,12 +22,13 @@ const habitCrud = async () => {
         //console.log(foundBlog)
 
         // UPDATE
-        const updatedHabit = await db.Habit.findOneAndUpdate(
-            {habit: "Ride your bike"},
-            { timeSpent: 15},
-            { new: true , upsert: true }
-        )
-            console.log(updatedHabit)
+    //     const updatedHabit = await db.Habit.findOneAndUpdate(
+    //         {habit: "Ride your bike"},
+    //         { timeSpent: 15},
+    //         { new: true , upsert: true }
+    //     )
+    //         console.log(updatedHabit)
+    
 
     } catch (err) {
         console.log(err);
